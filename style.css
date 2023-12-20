@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(217, 54%, 11%);
+}
+
+#card{
+    height: 78%;
+    width: 22%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+#img{
+    height: 54%;
+    width: 100%;
+    position: relative;
+}
+
+#nft{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+   
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    position: absolute;
+}
+
+#hover-eye{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.403);
+}
+
+#hover-eye:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nft-name{
+    color: #fff;
+    font-family: Outfit;
+    margin: 20px 0;
+}
+
+.nft-name:hover,
+.name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+#nft-info{
+    margin:20px 0;
+    font-family: Outfit;
+    font-weight: 200;
+    color:hsl(215, 29%, 63%);
+}
+
+#price{
+    font-size: 14px;
+    font-weight: 600;
+    font-family:Outfit;
+    color: hsl(178, 100%, 50%);
+}
+
+#time{
+    font-size: 14px;
+    color:hsl(215, 29%, 63%);
+}
+
+#nft-details{
+    display: flex;
+    justify-content: space-between;
+    font-family: Outfit;
+}
+
+svg{
+    size: 3px;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+#creater-name{
+    font-size: 14px;
+    padding: 16px 0 0 0;
+    font-family: Outfit;
+}
+
+#creater-info{
+    display: flex;
+    margin: 16px 0 0 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creation{
+    color:hsl(215, 29%, 63%);
+}
+
+.name{
+    color: #fff;
+}
+
+
+.svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+
+#avtar{
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width:375px){
+    #card{
+        width: 76%;
+        height: 90%;
+    }
+}
